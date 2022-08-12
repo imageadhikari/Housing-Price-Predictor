@@ -22,8 +22,8 @@
 }
 
 .logo{
-    width:30%;
-    height:30%;
+    width:25%;
+    height:25%;
     cursor: pointer;
 }
 
@@ -36,7 +36,7 @@
 
 .navbar ul li a{
     text-decoration: none;
-    color: #aa6c39;
+    color: #c1c1c0;
     text-transform: uppercase;
 }
 
@@ -44,7 +44,7 @@
     content: '';
     height: 3px;
     width:0;
-    background: #aa6c39;
+    background: #c1c1c0;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -61,7 +61,7 @@
     top:50%;
     transform: translateY(-50%);
     text-align: center;
-    color:#aa6c39
+    color:#c1c1c0;
 }
 
 .content h1{
@@ -74,3 +74,41 @@
     font-weight: 100;
     line-height: 25px;
 }
+
+button{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #c1c1c0;
+    background: transparent;
+    color: #c1c1c0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background:#553f30;
+    height:100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+
+}
+
+button:hover {
+    border: none;
+}
+
