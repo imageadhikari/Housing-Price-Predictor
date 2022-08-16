@@ -11,24 +11,6 @@ def home():
 
 @app.route("/predict", methods=['POST'])
 def predict():
-        # area = request.form["Land Area"]
-        # bed = request.form["Bedrooms"]
-        # bath = request.form["Bathrooms"]
-        # bal = request.form["Balcony"]
-        # site = request.form["Location"]
-
-        # loc_index = np.where(X.columns==site)[0][0]
-
-        # x = np.zeros(len(X.columns))
-        # x[0] = area
-        # x[1] = bath
-        # x[2] = bed
-        # x[3] = bal
-        # if loc_index >= 0:
-        #         x[loc_index] = 1
-
-        # return model.predict([x])[0]
-
 
     site_arr=np.zeros(96)
 
@@ -230,7 +212,6 @@ def predict():
         elif site=='Yerawada':
                 site_arr[95]=1
 
-
         area = np.array([float(request.form["Land Area"])])
         bed = np.array([int(request.form["Bedrooms"])])
         bath = np.array([int(request.form["Bathrooms"])])
@@ -243,7 +224,6 @@ def predict():
         x_arr[3] = bed
 
         x = np.concatenate([x_arr,site_arr])
-
         prediction=float(model.predict([x])[0])
 
     #.py -> HTML    
