@@ -114,10 +114,37 @@ input[type='submit']{
     margin-bottom: 10px;
 }
 
+.container{
+    width: 80%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.messages{
+    padding: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    line-height: 30px;
+}
+
 .messages h1{
-    color: white;
+    margin-bottom: 20px;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .messages h2{
-    color: white;
+    margin-top: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
+.messages h3{
+    color: #daa34e;
 }

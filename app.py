@@ -227,7 +227,7 @@ def predict():
         prediction=float(model.predict([x])[0])
 
     #.py -> HTML    
-    return render_template('predict.html', a = area, s = site, b1 = bed, b2 = bath, b3 = bal, predicted_value = prediction)
+    return render_template('predict.html', a = float(area), s = site, b1 = int(bed), b2 = int(bath), b3 = int(bal), predicted_value = "{:.2f}".format(prediction))
 
 if __name__=="__main__":
     app.run(debug=True)

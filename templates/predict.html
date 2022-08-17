@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/style.css">
-    <title>Predict</title>
+    <title>Prediction</title>
 </head>
 <body>
     <div class="banner">
-        <div class="messages">
-            <h2>The area of the house in sqft is {{a}}.</h2>
-            <h2>The house is located at {{s}}.</h2>
-            <h2>Total number of bedrooms in the house is {{b1}}.</h2>
-            <h2>Total number of bathrooms in the house is {{b2}}.</h2>
-            <h2>Total number of balconies in the house is {{b3}}.</h2>
-            <h1>The predicted price for the house is {{predicted_value}}</h1>
+        <div class="container">
+            <div class="messages">
+                <h1>Prediction</h1>
+                <h3>The area of the house in sqft is {{a}} square feet.</h3>
+                <h3>The house is located at {{s}}.</h3>
+                <h3>Total number of bedrooms in the house is {{b1}}.</h3>
+                <h3>Total number of bathrooms in the house is {{b2}}.</h3>
+                <h3>Total number of balconies in the house is {{b3}}.</h3>
+                <h2>The predicted price for the house is ${{predicted_value}} thousand.</h2>
+            </div>
         </div>
+
 
     </div>
 
